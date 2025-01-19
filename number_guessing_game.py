@@ -8,7 +8,7 @@ easy_life_lives = 10
 def guessing_game(no_of_trials, random_value):
     attempts_taken = 0
 
-    while True:
+    while no_of_trials > 0:
         guess = int(input("Make a Guess: "))
 
         if guess < 1 or guess > 100:
@@ -16,20 +16,19 @@ def guessing_game(no_of_trials, random_value):
 
         attempts_taken += 1
         
-        if no_of_trials < 1:
-            print(f"You are out of no_of_lives. [LOSS] !! The number was {random_value}")
-            break
-        else:
-            if guess < random_value:
-                print("Your guess is too low.")
-                no_of_trials -= 1
-            elif guess > random_value:
-                print("You guess is too high.")
-                no_of_trials -= 1
-            elif guess == random_value:
-                print(f"Congratulations you did it in {attempts_taken} trial(s) !! The random_value was {random_value}")
-                break
-        print(f"You have {no_of_trials} attempts remaining.")
+        if guess < random_value:
+            no_of_trials -= 1
+            print("Your guess is too low.")
+            print(f"You have {no_of_trials} attempts remaining.")
+        elif guess > random_value:
+            no_of_trials -= 1
+            print("You guess is too high.")
+            print(f"You have {no_of_trials} attempts remaining.")
+        elif guess == random_value:
+            print(f"Congratulations you did it in {attempts_taken} trial(s) !! The random_value was {random_value}")
+
+    if no_of_trials == 0:
+        print(f"You are out of lives. [LOSS] !! The number was {random_value}")
 
 print(logo)
 print("Welcome to the Number Guessing Game!")
