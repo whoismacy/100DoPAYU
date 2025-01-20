@@ -9,10 +9,10 @@ def guessing_game(no_of_trials, random_value):
     attempts_taken = 0
 
     while no_of_trials > 0:
-        guess = int(input("Make a Guess: "))
+        guess = int(input("Make a guess: "))
 
         if guess < 1 or guess > 100:
-            guess = int(input("Kindly enter a value between 1 and 100: "))
+            guess = int(input("Kindly input a value between 1 and 100: "))
 
         attempts_taken += 1
         
@@ -32,8 +32,8 @@ def guessing_game(no_of_trials, random_value):
 
 print(logo)
 print("Welcome to the Number Guessing Game!")
-print("I am thinking of a number between 1 and 100")
 difficulty_level = input("Choose your difficulty: 'hard' or 'easy': ").lower()
+print("I am thinking of a number between 1 and 100")
 
 if difficulty_level[0] == "h":
     guessing_game(hard_level_lives, random.randint(1, 100))
