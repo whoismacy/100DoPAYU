@@ -1,0 +1,9 @@
+Dictionaries use hash tables, to store values.
+The keys therefore have to be hashable
+A hash is a function that takes a value (of any kind) and returns an integer.
+Dictionaries use these integers, called hash values, to store and look up keys.
+This system only works if a key is immutable, so its hash value is always the same. But
+if a key is mutable, its hash value could change, and the dictionary would not work.
+That’s why keys have to be hashable, and why mutable types like lists aren’t.
+Since dictionaries are mutable, they can’t be used as keys either. But they can be used
+as values.
