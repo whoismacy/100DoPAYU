@@ -14,3 +14,5 @@ def is_prime(n1):
         if n1 % i == 0:
             return False
     return True
+
+print(is_prime(379))
