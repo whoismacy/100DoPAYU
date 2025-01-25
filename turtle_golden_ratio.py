@@ -5,8 +5,9 @@ import math
 import random
 
 amy = Turtle()
-amy.speed(0)
+amy.speed(0.1)
 amy.hideturtle()
+amy.pensize(7)
 screen = Screen()
 screen.colormode(255)
 
@@ -31,5 +32,5 @@ def polyline(n_sides, length, angle):
 
 
 screen.setup(1920, 1080)
-polyline_colorful(900, 1, 137.5)
+polyline_colorful(200, 20, 137.5)
 screen.exitonclick()

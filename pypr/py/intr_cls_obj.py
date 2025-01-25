@@ -10,12 +10,12 @@ from copy import copy
 # orig_obj is copy_obj will print out False and so will orig_obj == copy_obj
 
 class Time:
-    """Represents time during the day."""
+    """Represents time of day."""
 
-def print_time(time):
-    """A function that takes a time object as a parameter
-    and prints out the time in the correct format."""
-    print(f"{time.hour:02d}:{time.minute:02d}:{time.second:02d}")
+    def print_time(self):
+        """A function that takes a time object as a parameter
+        and prints out the time in the correct format."""
+        print(f"{self.hour:02d}:{self.minute:02d}:{self.second:02d}")
 
 def make_time(hour, minute, second):
     """A function that creates a Time object
