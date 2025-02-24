@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% block title %}Edit the Rating{% endblock %}
+{% block content %}
+    <form action="/edit_rating/{{ details[0] }}/{{ details[1] }}" method="POST">
+        <p style="display: inline">Book Title: </p> {{ details[0] }} <br><hr>
+        <p style="display: inline">Current Rating: </p> {{ details[-1] }} <br><hr>
+        {{ form.hidden_tag() }}
+        {{ form.book_rating.label }}
+        {{ form.book_rating }} <br>
+        {{ form.submit_button }}
+    </form>
+{% endblock %}

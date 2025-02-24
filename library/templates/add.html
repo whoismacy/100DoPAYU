@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% block title %}Add a book to library{% endblock %}
+{% block content %}
+    <form action="/add" method="POST">
+        {{ form.hidden_tag() }}
+        {{ form.book_name.label }}
+        {{ form.book_name }} <br> <br>
+        {{ form.book_author.label }}
+        {{ form.book_author }} <br> <br>
+        {{ form.book_rating.label }}
+        {{ form.book_rating }} <br> <br>
+        {{ form.submit_button }}
+    </form>
+{% endblock %}

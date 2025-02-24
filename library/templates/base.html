@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}{% endblock %}</title>
+    <style>
+        body{
+            font-family: Helvetica, sans-serif;
+            font-weight: 700;
+            font-size: 20px;
+        }
+        a{
+            text-decoration: none;
+            cursor: pointer;
+        }
+        .delete{
+            color: red;
+        }
+        a:link{
+            color: mediumvioletred;
+        }
+        a:visited{
+            color: mediumvioletred;
+        }
+        a:hover{
+            color: mediumvioletred;
+        }
+        a:active{
+            color: mediumvioletred;
+        }
+        .orange{
+            color: orange;
+        }
+        .green{
+            color: green;
+        }
+    </style>
+</head>
+<body>
+{% block content %}{% endblock %}
+</body>
+</html>
