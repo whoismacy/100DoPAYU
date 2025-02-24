@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Forms</title>
+    <style>
+        body{
+            font-family: Helvetica, sans-serif;
+            font-size: 1.5em;
+            line-height: 2em;
+        }
+    </style>
+</head>
+<body>
+  <form action="/login" method="POST">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="usrname" placeholder="Name" required>
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="passwd" placeholder="Password" required>
+    <button type="submit">OK</button>
+  </form>
+
+</body>
+</html>
