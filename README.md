@@ -1,2 +1,1 @@
-# 100DoPAYU
-Python
+[]!(https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExZWZhcmpuOHA0anpodmVnbTE2cXdsMnN1ejgya25iNXd3dXNvY3h4bSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/coxQHKASG60HrHtvkt/giphy.gif)
